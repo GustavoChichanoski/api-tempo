@@ -1,0 +1,19 @@
+<div>
+    <span>
+        <ul class="list-inline">
+            <li class="list-inline-item" (click)="updateUnit(unitsEnum.Metric)">
+                <a class="badge" [ngClass]="unit === unitsEnum.Metric ? 'badge-primary' : 'badge-dark'">°C</a>
+            </li>
+        </ul>
+        <ul class="list-inline">
+            <li class="list-inline-item" (click)="updateUnit(unitsEnum.Metric)">
+                <a class="badge" [ngClass]="unit === unitsEnum.Imperial ? 'badge-primary' : 'badge-dark'">°F</a>
+            </li>
+        </ul>
+        <ul class="list-inline">
+            <li class="list-inline-item" (click)="updateUnit(unitsEnum.Metric)">
+                <a class="badge" [ngClass]="unit === unitsEnum.SI ? 'badge-primary' : 'badge-dark'">K</a>
+            </li>
+        </ul>
+    </span>
+</div>
